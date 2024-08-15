@@ -3,18 +3,18 @@
 
 
 function appendToHome(emptyElement) {
-  const text = document.createElement('p');
-  const shit = document.createElement('p');
-  const da = document.createElement('p');
-  // ovie bea za primer, ovde kje gi dodadam ostanatite elementi: image, headline, text bla bla...
+  const title = document.createElement('div');
+  const someText = document.createElement('div');
   
-  text.innerHTML = 'blabla';
-  shit.innerHTML = 'shiitt';
-  da.innerHTML = 'hi';
+  
+  title.innerHTML = 'Melipnos Calamari Restaurant';
+  someText.innerHTML = 'The best calamari in town!';
 
-  emptyElement.appendChild(text);
-  emptyElement.appendChild(shit);
-  emptyElement.appendChild(da);
+  title.className = 'title';
+  someText.className = 'some-text';
+
+  emptyElement.appendChild(title);
+  emptyElement.appendChild(someText);
 }
 
 export default appendToHome;

@@ -1,5 +1,7 @@
-
-
+body {
+  padding: 0px;
+  margin: 0px;
+}
 
 .navigation {
   display: flex;
@@ -7,4 +9,72 @@
 
 .navigation > * {
   flex: 1;
+  font-size: 3rem;
+}
+
+#content {
+  background-color: rgb(75, 75, 138);
+  padding: 50px 30px 0 30px;
+  border-radius: 20px;
+}
+
+.title,
+.some-text {
+  color: wheat;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 40px;
+  font-size: 3rem;
+}
+
+.some-text {
+  font-size: 1.5rem;
+}
+
+
+@media (max-width: 600px) {
+  .navigation > * {
+    font-size: 2rem;
+  }
+
+  #content {
+    margin: 20px 5% 0 5%;
+  }
+}
+
+.baked {
+  background-image: url(assets/onion-rings-served-with-lettuce-sauce.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+}
+
+.fried {
+  background-image: url(assets/onion-rings-served-with-lettuce-sauce.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  text-align: center;
+}
+
+.raw {
+  background-image: url(assets/fresh-squid.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  
+}
+
+.baked,
+.raw,
+.fried {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
 }

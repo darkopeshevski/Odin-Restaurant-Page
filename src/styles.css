@@ -1,0 +1,10 @@
+
+
+
+.navigation {
+  display: flex;
+}
+
+.navigation > * {
+  flex: 1;
+}
